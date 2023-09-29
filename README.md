@@ -18,10 +18,10 @@ Here are the steps you need to implement your own sample.
 #### Scaffolding Identity
 Because we will be using and modifying Identity, we need to scaffold its code into our project.
 
-![Scaffolding identity step 1](.\docs\README\scaffolding-identity1.png)
-![Scaffolding identity step 2](.\docs\README\scaffolding-identity2.png)
+![Scaffolding identity step 1](docs\README\scaffolding-identity1.png)
+![Scaffolding identity step 2](docs\README\scaffolding-identity2.png)
 Override all and select the default DbContext for the project.
-![Scaffolding identity step 3](.\docs\README\scaffolding-identity3.png)
+![Scaffolding identity step 3](docs\README\scaffolding-identity3.png)
 
 #### Modifying identity
 We will use Claims to keep track of wich users have enabled TOTP MFA, for this a new UserClaimsPrincipalFactory needs to be implemented.
@@ -118,7 +118,7 @@ builder.Services.AddSingleton<IEmailSender, MyEmailSender>();
 ```
 
 
-Because we modified Identity´s injection, we need to modify every page in `Areas\Identity\Pages\Account\Manage`
+Because we modified Identityï¿½s injection, we need to modify every page in `Areas\Identity\Pages\Account\Manage`
 ```csharp
 // .\Identity/Account/Manage/_Layout.cshtml
 @{
